@@ -1,4 +1,4 @@
-package com.bwq.medium
+package com.company;
 /**
  * Definition for singly-linked list.
  * public class ListNode {
@@ -11,7 +11,7 @@ package com.bwq.medium
 public class TheTwoTogether {
     public static void main(String[] args)
     {
-        System.out.print('开始环境测试');
+        System.out.print("开始测试");
     }
     public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
         // 1.首先将链表数据拼接成非负的整数
@@ -55,7 +55,7 @@ public class TheTwoTogether {
         if(carry==1){
             cur.next = new ListNode(carry);
         }
-        return carry;
+        return pre.next;
     }
 
     public class ListNode {
